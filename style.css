@@ -1,6 +1,6 @@
 /*Color theme: Soft lavender
 LInk: https://coolors.co/palettes/trending
-Colors: 22223b, 4a4e69, 9a8c98, c9ada7, f2e9e4*/
+Colors: 6b9080, a4c3b2, cce3de, eaf4f4, f6fff8*/
 
 
 * {       /* Gjør det mulig å bryte opp skjermen i grid*/
@@ -9,7 +9,7 @@ Colors: 22223b, 4a4e69, 9a8c98, c9ada7, f2e9e4*/
 
 
 a {
-  color: #f4eeff;
+  color: #f6fff8;
 }
 
 p {
@@ -17,7 +17,7 @@ p {
 }
 
 body {
-  background-color: #f2e9e4;
+  background-color: #f6fff8;
 }
 
 .row::after { /*   */
@@ -35,11 +35,11 @@ body {
 
 html {
   font-family: Verdana, Arial, sans-serif;
-  color: #22223b;
+  color: #6b9080;
 }
 
 .header {
-  background-color: #9a8c98;
+  background-color: #6b9080;
   padding: 1px;
   margin-top: 1px;
   max-width: 100%;
