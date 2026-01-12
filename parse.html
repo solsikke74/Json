@@ -13,8 +13,7 @@
 
 <div class="header">
     <h1>Json</h1>
-    <p>Da vi mottar data fra en server, er den alltid en string.</p>
-    <p>Vi bruker javascriptfunksjonen JSON parse() for å gjøre om tekst til Javascript objekt. </p>
+    
 </div>
 
 <div class="row">
@@ -31,15 +30,17 @@
 
 <div class = "main-content">
   <h1>Parse</h1>
+    <p>Da vi mottar data fra en server, er den alltid en string.</p>
+    <p>Vi bruker javascriptfunksjonen JSON parse() for å gjøre om tekst til Javascript objekt. </p>
 
-<p id="demo"></p>
+    <p id="demo"></p>
 
-<script>
-const txt = '{"name":"John", "age":30, "city":"New York"}'
-const myObj = JSON.parse(txt);
+    <script>
+    const txt = '{"name":"John", "age":30, "city":"New York"}'
+    const myObj = JSON.parse(txt);
 
-document.getElementById("demo").innerHTML = myObj.name + ", " + myObj.age + ", " + myObj.city;
-</script>
+    document.getElementById("demo").innerHTML = myObj.name + ", " + myObj.age + ", " + myObj.city;
+    </script>
 </div>
 
 
