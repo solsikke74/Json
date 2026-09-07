@@ -1,0 +1,50 @@
+{
+  "elevar": [
+    {
+      "namn": "Sara",
+      "alder": 16,
+      "klasse": "1STA"
+    },
+    {
+      "namn": "Jonas",
+      "alder": 17,
+      "klasse": "2STB"
+    },
+    {
+      "namn": "Emma",
+      "alder": 15,
+      "klasse": "1STC"
+    }
+  ],
+  "bøker": [
+    {
+      "tittel": "Ringenes Herre",
+      "forfattar": "J.R.R. Tolkien",
+      "år": 1954
+    },
+    {
+      "tittel": "Harry Potter",
+      "forfattar": "J.K. Rowling",
+      "år": 1997
+    },
+    {
+      "tittel": "Hobbiten",
+      "forfattar": "J.R.R. Tolkien",
+      "år": 1937
+    }
+  ],
+  "produkt": [
+    {
+      "namn": "Eple",
+      "pris": 10
+    },
+    {
+      "namn": "Banan",
+      "pris": 8
+    },
+    {
+      "namn": "Mango",
+      "pris": 20
+    }
+  ]
+}
