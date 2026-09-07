@@ -60,37 +60,51 @@ body {
     padding: 0;
 }
 
- ul.topnav {
+ ul.nav {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden; 
+  padding: 10px;
   background-color: #022b3a;
+  
+  /* Bruk Flexbox for automatisk tilpasning */
+  display: flex;
+  justify-content: space-around; /* Fordeler knappene jevnt utover */
+  align-items: center;
+  flex-wrap: wrap; /* Sørger for at knapper hopper ned hvis skjermen er for smal */
+  gap: 10px; /* Lager jevnt mellomrom mellom knappene */
 }
 
-ul.topnav li{
-  float: left;
-  }
+ul.nav li {
+  /* Fjerner float og lar flex styre linjen */
+  flex: 1; /* Gjør at alle knapper får like stor bredde */
+  text-align: center;
+}
 
-ul.topnav li a {
+ul.nav li a {
   display: block;
   color: #e1e5f2;
   text-align: center;
-  padding: 20px 40px;
+  padding: 12px 16px; /* Redusert fra 20px 40px for å passe bedre */
   text-decoration: none;
   border: #bfdbf7 solid 1px; 
-  border-radius: 6px;   /* valgfritt – penere */ 
-  margin: 30px;      
+  border-radius: 6px; 
+  margin: 0; /* Bruker gap i ul.nav i stedet for margin her */
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #1f7a8c;}
+ul.nav li a:hover:not(.active) {
+  background-color: #1f7a8c;
+}
 
-
+/* Responsiv tilpasning for mobilskjermer */
 @media screen and (max-width: 600px) {
-    ul.topnav li.right,
-    ul.topnav li {float: none;}
+  ul.nav {
+    flex-direction: column; /* Legger knappene under hverandre på mobil */
+  }
+  
+  ul.nav li {
+    width: 100%;
+  }
 }
-
 
  main{
     background-color: #bfdbf7;
