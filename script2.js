@@ -12,3 +12,4 @@ const myObject2 = JSON.parse(textDateOnly, parseDate);
 document.getElementById("demo").innerHTML = `${typeof myObject.date} ${myObject.date.toLocaleString()}`;
 document.getElementById("Dato").innerHTML = `${typeof myObject2.date} ${myObject2.date.toLocaleDateString()}`;
 document.getElementById("DatoOgEvent").innerHTML = `${myObject2.event}: ${myObject2.date.toLocaleDateString()}`;
+
