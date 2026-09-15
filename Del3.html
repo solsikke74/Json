@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>JavaScript Arrays</title>
-         <link rel="stylesheet" href="StyleMain.css">
-    </head>
+<html lang="no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript JSON - fetch()</title>
+    <link rel="stylesheet" href="StyleMain.css">
+</head>
 <body>
 
-<nav>
-    <ul class="nav">
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="Del1.html">Del 1</a></li>
-        <li><a href="Del2.html">Del 2</a></li>
-        <li><a href="Del3.html">Del 3</a></li>
-        <li><a href="Del4.html">Del 4</a></li>
-        <li><a href="Del5.html">Del 5</a></li>
-        <li><a href="Del6.html">Del 6</a></li>
-    </ul>
-</nav>
+<header>
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="Del1.html">Del 1</a></li>
+            <li><a href="Del2.html">Del 2</a></li>
+            <li><a href="Del3.html" class="active">Del 3</a></li>
+            <li><a href="Del4.html">Del 4</a></li>
+            <li><a href="Del5.html">Del 5</a></li>
+            <li><a href="Del6.html">Del 6</a></li>
+        </ul>
+    </nav>
+</header>
 
+<main>
+    <section class="card">
+        <h2>Elever, navn og klasse</h2> 
+        <p class="subtitle">
+            Skriver ut elever, navn og klasse ved hjelp av JSON og 
+            <a href="https://www.w3schools.com/js/js_api_fetch.asp" target="_blank" rel="noopener noreferrer">fetch()</a>.
+        </p>
 
-<h1>JavaScript Arrays</h1>
+        <div class="table-container">
+            <table id="klasseTabell">
+                <thead>
+                    <tr>
+                        <th>Navn</th>
+                        <th>Alder</th>
+                        <th>Klasse</th>
+                    </tr>
+                </thead>
+                <tbody id="tabellKropp">
+                    <!-- Her blir elevene lagt til fra JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
 
-<h2>Favorittfilmer: </h2>
-<p id="demo"></p>
+    <section class="card result-card">
+        <h3>Eldste elev: <span id="EldsteElev">Sara</span></h3>
+        <p>
+            Lært via 
+            <a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank" rel="noopener noreferrer">Math.max() på en array</a>.
+        </p>
+    </section>
 
-<p id="fruit"></p>
+    <section class="card result-card">
+        <h3>Antall elever: <span id="AntallElever">5</span></h3>
+        <p>
+            Lært via 
+            <a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank" rel="noopener noreferrer">Math.max() på en array</a>.
+        </p>
+    </section>
 
-<p id="tall"></p>
+</main>
 
-<p>Summer tall:</p>
-<p id="sum"></p>
+<footer>
+    <p><a href="index.html">Tilbake til forsiden</a></p>
+</footer>
 
-<h2>Legge til elementer</h2>
-<h3>Bestselgere Steam</h3>
-<h3>Topp 3</h3>
-<p id="steam"></p>
-<h3>Klikk meg for å få topp 4</h3>
-
-<button onclick="myFunction()">Try it</button>
-
-<script src="script.js"></script>
-
+<script src="script3.js"></script>
 </body>
-
-
 </html>

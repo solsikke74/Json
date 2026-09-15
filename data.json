@@ -1,19 +1,24 @@
 {
   "elevar": [
     {
-      "namn": "Sara",
+      "namn": "Bente",
       "alder": 16,
-      "klasse": "1STA"
+      "klasse": "1IMA"
     },
     {
       "namn": "Jonas",
       "alder": 17,
-      "klasse": "2STB"
+      "klasse": "2ITKA"
     },
     {
       "namn": "Emma",
       "alder": 15,
-      "klasse": "1STC"
+      "klasse": "1IMA"
+    },
+    {
+      "namn": "Kenneth",
+      "alder": 16,
+      "klasse": "1IMA"
     }
   ],
   "bøker": [

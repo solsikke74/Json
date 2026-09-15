@@ -1,132 +1,186 @@
- /*Fargekoder
- color: #022b3a;
- color: #1f7a8c;
- color: #bfdbf7;
- color: #e1e5f2;
- color: #ffffff; 
- Gentle Sea Breeze
- https://coolors.co/palette/022b3a-1f7a8c-bfdbf7-e1e5f2-ffffff
-  */
+:root {
+  --color-dark-blue: #022b3a;
+  --color-teal: #1f7a8c;
+  --color-light-blue: #bfdbf7;
+  --color-ice-blue: #e1e5f2;
+  --color-white: #ffffff;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
-*, *::before, *::after 
-{ 
+*, *::before, *::after { 
   box-sizing: border-box;
-}
-/* a CSS property value that forces an element's specified width and height to include its 
-content, padding, and border. It prevents elements from expanding unexpectedly when padding or borders are added, 
-making layout calculations much easier and more intuitive compared to the default content-box. */
-
-
-h1 {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  margin-bottom: 0.5em;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 1.3;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-}
-
-h3 {
-  font-size: 1.75rem;
-  line-height: 1.4;
-  margin-top: 1.2em;
-}
-p {
-    color: #1f7a8c;
-    line-height: 1.6;
-    margin-bottom: 16px;
-    margin-left: 10px;
-}
-
-a:link {
-  color: #022b3a;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: #022b3a;
-  background-color: transparent;
 }
 
 body {
-    background-color:#bfdbf7;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: var(--color-light-blue);
+  font-family: var(--font-main);
+  color: var(--color-dark-blue);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
- ul.nav {
+/* Typografi */
+h1, h2, h3, h4 {
+  color: var(--color-dark-blue);
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.4em;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--color-teal);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Lenker */
+a {
+  color: var(--color-teal);
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-dark-blue);
+}
+
+/* Navigasjon */
+ul.nav {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
-  background-color: #022b3a;
-  
-  /* Bruk Flexbox for automatisk tilpasning */
+  padding: 12px;
+  background-color: var(--color-dark-blue);
   display: flex;
-  justify-content: space-around; /* Fordeler knappene jevnt utover */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Sørger for at knapper hopper ned hvis skjermen er for smal */
-  gap: 10px; /* Lager jevnt mellomrom mellom knappene */
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 ul.nav li {
-  /* Fjerner float og lar flex styre linjen */
-  flex: 1; /* Gjør at alle knapper får like stor bredde */
+  flex: 1;
+  max-width: 120px;
   text-align: center;
 }
 
 ul.nav li a {
   display: block;
-  color: #e1e5f2;
+  color: var(--color-ice-blue);
   text-align: center;
-  padding: 12px 16px; /* Redusert fra 20px 40px for å passe bedre */
+  padding: 10px 14px;
   text-decoration: none;
-  border: #bfdbf7 solid 1px; 
+  border: 1px solid rgba(191, 219, 247, 0.3); 
   border-radius: 6px; 
-  margin: 0; /* Bruker gap i ul.nav i stedet for margin her */
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
 }
 
-ul.nav li a:hover:not(.active) {
-  background-color: #1f7a8c;
+ul.nav li a:hover,
+ul.nav li a.active {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+  border-color: var(--color-teal);
 }
 
-/* Responsiv tilpasning for mobilskjermer */
-@media screen and (max-width: 600px) {
-  ul.nav {
-    flex-direction: column; /* Legger knappene under hverandre på mobil */
-  }
-  
-  ul.nav li {
-    width: 100%;
-  }
+/* Layout for Main */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
- main{
-    background-color: #bfdbf7;
-    color: #1f7a8c;
- }
-
- .footer a { 
-  color: #e1e5f2;
-  text-decoration: none;
-  font-size: 18px;
+/* Kort-design (Containers) */
+.card {
+  background-color: var(--color-white);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(2, 43, 58, 0.08);
 }
 
-  footer{
-  width: min(600px, 90%); 
-  background-color: #022b3a;  
-  color: #e1e5f2;
-  min-height: 80px;
-  display: flex;
-  justify-content: center;
+.result-card {
+  background-color: var(--color-ice-blue);
+  border-left: 5px solid var(--color-teal);
+}
+
+/* Tabell-styling */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: var(--color-dark-blue);
+  color: var(--color-ice-blue);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-ice-blue);
+  color: var(--color-dark-blue);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#EldsteElev {
+  color: var(--color-teal);
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  max-width: 900px;
+  margin: 40px auto 20px auto;
   text-align: center;
-  padding: 14px;
-  align-items: center;
-  border-radius: 10px;
-  margin:24px auto;
- }
+}
+
+footer a {
+  color: var(--color-dark-blue);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobil-tilpasning */
+@media screen and (max-width: 600px) {
+  ul.nav li {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
