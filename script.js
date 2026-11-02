@@ -9,10 +9,6 @@ document.getElementById("NavnUtskrift").textContent =
 person.name + ", " + person.age + ", " + person.city;
 
 
-let text = "<ul>";
-for (let i = 0; i < fLen; i++) {
-  text += "<li>" + fruits[i] + "</li>";
-}
-text += "</ul>";
+ 
 
  

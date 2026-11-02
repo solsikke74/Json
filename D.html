@@ -12,21 +12,21 @@
     <nav>
         <ul class="nav">
             <li><a href="index.html">Hjem</a></li>
-            <li><a href="Del1.html">Del 1</a></li>
-            <li><a href="Del2.html">Del 2</a></li>
-            <li><a href="Del3.html" class="active">Del 3</a></li>
-            <li><a href="Del4.html">Del 4</a></li>
-            <li><a href="Del5.html">Del 5</a></li>
-            <li><a href="Del6.html">Del 6</a></li>
+            <li><a href="A.html">A</a></li>
+            <li><a href="B.html">B</a></li>
+            <li><a href="C.html" >C</a></li>
+            <li><a href="D.html" class="active">D</a></li>
+            <li><a href="E.html">E</a></li>
+            <li><a href="F.html">F</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section class="card">
-        <h2>Elever, navn og klasse</h2> 
+        <h2>Alle bøker</h2> 
         <p class="subtitle">
-            Skriver ut elever, navn og klasse ved hjelp av JSON og 
+            Skriver ut bøker ved hjelp av JSON og 
             <a href="https://www.w3schools.com/js/js_api_fetch.asp" target="_blank" rel="noopener noreferrer">fetch()</a>.
         </p>
 
@@ -34,9 +34,9 @@
             <table id="klasseTabell">
                 <thead>
                     <tr>
-                        <th>Navn</th>
-                        <th>Alder</th>
-                        <th>Klasse</th>
+                        <th>Tittel</th>
+                        <th>Forfatter</th>
+                        <th>År</th>
                     </tr>
                 </thead>
                 <tbody id="tabellKropp">
@@ -47,15 +47,7 @@
     </section>
 
     <section class="card result-card">
-        <h3>Eldste elev: <span id="EldsteElev">Sara</span></h3>
-        <p>
-            Lært via 
-            <a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank" rel="noopener noreferrer">Math.max() på en array</a>.
-        </p>
-    </section>
-
-    <section class="card result-card">
-        <h3>Antall elever: <span id="AntallElever">5</span></h3>
+        <h3>Eldste bok: <span id="EldsteBok"></span></h3>
         <p>
             Lært via 
             <a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank" rel="noopener noreferrer">Math.max() på en array</a>.
@@ -68,6 +60,6 @@
     <p><a href="index.html">Tilbake til forsiden</a></p>
 </footer>
 
-<script src="script3.js"></script>
+<script src="Script4.js"></script>
 </body>
 </html>
