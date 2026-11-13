@@ -1,3 +1,5 @@
-const d = new Date();
-let text = d.toJSON();
-document.getElementById("Dato").innerHTML = text;
+let dato = new Date();
+
+document.getElementById("Dato").textContent = dato.toJSON();
+document.getElementById("DatoUtenKlokkeslett").textContent =
+  dato.toLocaleDateString();
