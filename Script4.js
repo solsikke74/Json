@@ -25,8 +25,12 @@ async function loadJSONmath() {
   const response = await fetch("data.json");
   const data = await response.json();
 
-  const alders = data.bøker.map(bok => bok.år); 
-  document.getElementById("EldsteBok").innerHTML = myArrayMax(alders);
+  const eldsteBok = data.bøker.reduce((eldste, bok) =>
+    bok.år < eldste.år ? bok : eldste
+  );
 
+  document.getElementById("eldsteBok").textContent =
+    `${eldsteBok.tittel} av ${eldsteBok.forfattar} (${eldsteBok.år})`;
 }
+
 loadJSONmath();

@@ -18,9 +18,38 @@
         <li><a href="F.html">F</a></li>
     </ul>
 </nav> 
- 
+ <section class="card">
+        <h2>Alle produkter</h2> 
+        <p class="subtitle">
+            Skriver ut produkter ved hjelp av JSON og 
+            <a href="https://www.w3schools.com/js/js_api_fetch.asp" target="_blank" rel="noopener noreferrer">fetch()</a>.
+        </p>
 
-<script src="script.js"></script>
+        <div class="table-container">
+            <table id="klasseTabell">
+                <thead>
+                    <tr>
+                        <th>Produkt</th>
+                        <th>Pris</th>
+                    </tr>
+                </thead>
+                <tbody id="tabellKropp">
+                    <!-- Her blir elevene lagt til fra JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="card result-card">
+        <h3>Dyreste produkt: <span id="dyresteProdukt"></span></h3>
+        <p>
+            Lært via 
+            <a href="https://www.w3schools.com/js/js_array_sort.asp" target="_blank" rel="noopener noreferrer">Math.max() på en array</a>.
+        </p>
+    </section>
+
+
+<script src="scriptE.js"></script>
 
 </body>
 
