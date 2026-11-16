@@ -17,10 +17,36 @@
         <li><a href="E.html">E</a></li>
         <li><a href="F.html">F</a></li>
     </ul>
-</nav>
+</nav> 
 
+<main>
+    <section class="card">
 
-<script src="script.js"></script>
+    <h2>Søk etter forfatter</h2>
+
+    <p class="subtitle">
+        Skriv inn navnet på en forfatter og få opp alle bøkene av denne forfatteren.
+    </p>
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="forfatter"
+            placeholder="For eksempel Knut Hamsun">
+
+        <button onclick="sokForfatter()">
+            Søk
+        </button>
+
+    </div>
+
+    <div id="resultat" class="search-result"></div>
+
+</section>
+</main>
+   
+<script src="scriptF.js"></script>
 
 </body>
 

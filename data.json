@@ -21,7 +21,7 @@
       "klasse": "1IMA"
     }
   ],
-  "bøker": [
+  "boker": [
     {
       "tittel": "Ringenes Herre",
       "forfattar": "J.R.R. Tolkien",
@@ -36,6 +36,11 @@
       "tittel": "Hobbiten",
       "forfattar": "J.R.R. Tolkien",
       "år": 1937
+    },
+     {
+      "tittel": "Teskjekjerringa",
+      "forfattar": " Alf Prøysen",
+      "år": 1949
     }
   ],
   "produkt": [

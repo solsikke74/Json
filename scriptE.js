@@ -33,3 +33,28 @@ async function loadJSONmath() {
 }
 
 loadJSONmath();
+
+fetch("data.json")
+  .then(response => response.json())
+  .then(data => {
+
+    let tekst = "";
+
+    for (let produkt of data.produkt) {
+
+      if (produkt.pris >= 10) {
+
+        tekst += `
+          <tr>
+            <td>${produkt.namn}</td>
+            <td>${produkt.pris}</td>
+          </tr>
+        `;
+
+      }
+
+    }
+
+    document.getElementById("tabellKroppover10").innerHTML = tekst;
+
+  });
